@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-30T20:02:37 IST" name="Automation Test Suite" finished-at="2024-03-30T20:02:44 IST" duration-ms="7057">
+    <groups>
+    </groups>
+    <test started-at="2024-03-30T20:02:37 IST" name="LoginTest" finished-at="2024-03-30T20:02:44 IST" duration-ms="7057">
+      <class name="tests.EndToEndTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:01:52 IST" name="setUp" finished-at="2024-03-30T20:02:37 IST" duration-ms="44182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:37 IST" name="setUpClass" finished-at="2024-03-30T20:02:38 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="loginUserTest()[pri:0, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:38 IST" name="loginUserTest" finished-at="2024-03-30T20:02:40 IST" duration-ms="2006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUserTest -->
+        <test-method signature="addItemToCartTest()[pri:1, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:42 IST" name="addItemToCartTest" finished-at="2024-03-30T20:02:42 IST" depends-on-methods="tests.EndToEndTest.loginUserTest" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCartTest -->
+        <test-method signature="verifyCartDetailsTest()[pri:2, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:42 IST" name="verifyCartDetailsTest" finished-at="2024-03-30T20:02:43 IST" depends-on-methods="tests.EndToEndTest.addItemToCartTest" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartDetailsTest -->
+        <test-method signature="enterCheckOutInfoTest()[pri:3, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:43 IST" name="enterCheckOutInfoTest" finished-at="2024-03-30T20:02:43 IST" depends-on-methods="tests.EndToEndTest.verifyCartDetailsTest" duration-ms="756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCheckOutInfoTest -->
+        <test-method signature="verifyCheckOutOverviewTest()[pri:4, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:44 IST" name="verifyCheckOutOverviewTest" finished-at="2024-03-30T20:02:44 IST" depends-on-methods="tests.EndToEndTest.enterCheckOutInfoTest" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckOutOverviewTest -->
+        <test-method signature="checkOutConfirmationTest()[pri:5, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:44 IST" name="checkOutConfirmationTest" finished-at="2024-03-30T20:02:44 IST" depends-on-methods="tests.EndToEndTest.verifyCheckOutOverviewTest" duration-ms="2" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Development is still in progress so skipping this test!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Development is still in progress so skipping this test!!
+at tests.EndToEndTest.checkOutConfirmationTest(EndToEndTest.java:100)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutConfirmationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EndToEndTest@67b9b51a]" started-at="2024-03-30T20:02:44 IST" name="tearDown" finished-at="2024-03-30T20:02:45 IST" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.EndToEndTest -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Automation Test Suite -->
+</testng-results>

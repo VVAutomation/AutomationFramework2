@@ -1,0 +1,78 @@
+
+Automation Test case:
+
+Launch url
+Login to app
+Perform the required action
+Validation 
+
+driver.findElement(By.id('login').sendKeys("");
+
+POM
+------
+For Each page - Create a Separate Java file
+-------------------------------------------
+LoginPage.java
+All the WebElement
+Action methods
+
+HomePage
+Download Page
+AddTOCartPage
+
+
+-------------------------------------
+Test Case Layer
+
+
+loginTest.java
+LoginPage lp = new LoginPage()
+
+lp.doLogin()
+
+preconditions --> launch the test site url -->  common step
+AddToCartTest.java
+login
+Select item
+provide necessary info
+add to cart
+add to cart - validation --> TestNG 
+Assert class 
+
+---------------------------------------------
+TestBase - super most
+
+--> All the setup --> 
+read the config.properties.  env vars--> global var --> browser name , url , credentials 
+
+Map-> K , V
+broserName=chrome
+url=https://www.saucedemo.com/v1/
+
+
+@BeforeSuite ->TestNG
+SetUp()
+
+@AfterSuite
+tearDown()
+->closure activities
+all the browser instance
+all the DB instance will be killed
+
+
+https://github.com/VVAutomation/AutomationFramework2.git
+
+echo "# AutomationFramework2" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/VVAutomation/AutomationFramework2.git
+git push -u origin main
+
+
+
+
+
+
+
